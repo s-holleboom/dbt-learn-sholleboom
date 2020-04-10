@@ -11,3 +11,18 @@ sources:
     database: raw
     tables:
       - name: payment
+
+  - name: raw
+    database: ticket_tailor
+    tables:
+      - name: orders
+
+  - name: learn_stripe
+    database: raw
+    tables:
+      - name: refunds
+
+  - name: raw
+    database: learn_stripe
+    tables:
+      - name: charges      
